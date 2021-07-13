@@ -18,6 +18,7 @@ const StyledHeaderContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background-color: white;
 `;
 
 const StyledTitle = styled.p`

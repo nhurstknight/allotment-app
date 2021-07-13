@@ -6,6 +6,8 @@ function Nav() {
     <StyledNavContainer>
       <Link to="/">Home</Link>
       <Link to="/about">About Us</Link>
+      <Link to="/news">News</Link>
+      <Link to="/calendar">Calendar</Link>
     </StyledNavContainer>
   );
 }
