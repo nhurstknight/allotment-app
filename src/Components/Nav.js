@@ -17,6 +17,21 @@ function Nav() {
 const StyledNavContainer = styled.div`
   grid-area: nav;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-evenly;
+
+  @media only screen and (min-width: 600px) {
+    flex-direction: row;
+  }
 `;
+
+
+// TODO: Explore how to style a Link 
+
+// const StyledNavLink = styled.a`
+//   text-decoration: none;
+// `;
+
+
 export default Nav;

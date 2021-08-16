@@ -15,9 +15,10 @@ const StyledCalendar = styled.div`
 `;
 const StyledCalendarIframe = styled.iframe`
   border: solid 1px #777;
-  width: 80vw;
+  width: 100vw;
   height: 60vh; 
   frameborder: 0;
   scrolling: no;
 `;
+
 export default Calendar;

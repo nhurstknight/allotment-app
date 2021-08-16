@@ -17,8 +17,8 @@ function App() {
       <Nav/>
       <Switch>
         <Route path='/calendar' component={ Calendar } />
-        <Route path='/calendar' component={ News } />
-        <Route path='/calendar' component={ ContactUs } />
+        <Route path='/news' component={ News } />
+        <Route path='/contact-us' component={ ContactUs } />
         <Route path='/about' component={ AboutUs } />
         <Route path='/' component={ Home } />
       </Switch>
@@ -32,8 +32,8 @@ const StyledMainGrid = styled.div`
   grid-template-areas:
     'header header header header header header'
     'nav    nav    nav    nav    nav    nav'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
+    'menu   main   main   main   main   main'
+    'footer footer footer footer footer footer';
   grid-gap: 20px;
   // background-color: #2196F3;
   height: 100vh;
