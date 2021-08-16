@@ -8,6 +8,7 @@ function Nav() {
       <Link to="/about">About Us</Link>
       <Link to="/news">News</Link>
       <Link to="/calendar">Calendar</Link>
+      <Link to="/contact-us">Contact Us</Link>
     </StyledNavContainer>
   );
 }
@@ -15,5 +16,7 @@ function Nav() {
 // use 'Styled' on naming to clearly indicate that this is for styled-components and not another component import
 const StyledNavContainer = styled.div`
   grid-area: nav;
+  display: flex;
+  justify-content: space-evenly;
 `;
 export default Nav;

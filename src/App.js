@@ -1,12 +1,14 @@
 import { Route, Switch } from 'react-router-dom';
 import styled from "styled-components";
+
+
 import Home from './Components/Home';
 import AboutUs from './Components/AboutUs';
 import Calendar from './Components/Calendar';
-
-
 import Header from "./Components/Header"
 import Nav from "./Components/Nav"
+import ContactUs from './Components/ContactUs';
+import News from './Components/News';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <Nav/>
       <Switch>
         <Route path='/calendar' component={ Calendar } />
+        <Route path='/calendar' component={ News } />
+        <Route path='/calendar' component={ ContactUs } />
         <Route path='/about' component={ AboutUs } />
         <Route path='/' component={ Home } />
       </Switch>
@@ -30,8 +34,8 @@ const StyledMainGrid = styled.div`
     'nav    nav    nav    nav    nav    nav'
     'menu main main main right right'
     'menu footer footer footer footer footer';
-  grid-gap: 10px;
-  background-color: #2196F3;
+  grid-gap: 20px;
+  // background-color: #2196F3;
   height: 100vh;
 `;
 export default App;
