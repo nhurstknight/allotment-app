@@ -4,11 +4,11 @@ import { Link } from "react-router-dom"
 function Nav() {
   return (
     <StyledNavContainer>
-      <Link to="/">Home</Link>
-      <Link to="/about">About Us</Link>
-      <Link to="/news">News</Link>
-      <Link to="/calendar">Calendar</Link>
-      <Link to="/contact-us">Contact Us</Link>
+      <StyledLink to="/">Home</StyledLink>
+      <StyledLink to="/about">About Us</StyledLink>
+      <StyledLink to="/news">News</StyledLink>
+      <StyledLink to="/calendar">Calendar</StyledLink>
+      <StyledLink to="/contact-us">Contact Us</StyledLink>
     </StyledNavContainer>
   );
 }
@@ -29,9 +29,9 @@ const StyledNavContainer = styled.div`
 
 // TODO: Explore how to style a Link 
 
-// const StyledNavLink = styled.a`
-//   text-decoration: none;
-// `;
+const StyledLink = styled(Link)`
+  text-decoration: none;
+`;
 
 
 export default Nav;
